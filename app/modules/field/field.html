@@ -1,0 +1,24 @@
+<field ng-controller="FieldController as fc">
+   <player class="" ng-class="gc.getPlayerClass(player)" ng-repeat="player in gc.game.homeTeam.players track by player.id">{{player.number}}</player>
+   <player class="" ng-class="gc.getPlayerClass(player)" ng-repeat="player in gc.game.awayTeam.players track by player.id">{{player.number}}</player>
+   <!--<player class="team-home pos-first">2</player>
+  <player class="team-home pos-second">31</player>
+  <player class="team-home pos-third">22</player>
+  <player class="team-home pos-short">17</player>
+  <player class="team-home pos-catcher">4</player>
+  <player class="team-home pos-left">7</player>
+  <player class="team-home pos-center">9</player>
+  <player class="team-home pos-right">11</player>
+  <player class="team-away base-first">5</player>
+  <player class="team-away base-second">29</player>
+  <player class="team-away base-third">44</player>
+  <player class="team-away base-home">62</player>
+  <player class="team-away box-left">13</player>
+  <player class="team-away box-right">21</player>
+  <player class="team-away on-deck-home">28</player>
+  <player class="team-away on-deck-away">52</player>-->
+   <on-deck-circle class="team-away"></on-deck-circle>
+   <on-deck-circle class="team-home"></on-deck-circle>
+   <dugout class="team-home"></dugout>
+   <dugout class="team-away"></dugout>
+</field>

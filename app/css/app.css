@@ -1,0 +1,379 @@
+body.non-responsive {
+/* Account for fixed navbar */
+  padding-top: 70px;
+  padding-bottom: 30px;
+  min-width: 970px;
+/* Don't let the lead text change font-size.*/
+/* Finesse the page header spacing */
+/* Non-responsive overrides
+ *
+ * Utilize the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+/* Reset the container */
+/* Demonstrate the grids */
+/* Always float the navbar header */
+/* Undo the collapsing navbar */
+/* Always apply the floated nav */
+/* Redeclare since we override the float above */
+/* Undo custom dropdowns */
+/* Undo form expansion */
+/* Copy-pasted from forms.less since we mixin the .form-inline styles. */
+/* Undo inline form compaction on small screens */
+}
+body.non-responsive .navbar-fixed-top,
+body.non-responsive .navbar-fixed-bottom {
+  min-width: 970px;
+}
+body.non-responsive .lead {
+  font-size: 16px;
+}
+body.non-responsive .page-header {
+  margin-bottom: 30px;
+}
+body.non-responsive .page-header .lead {
+  margin-bottom: 10px;
+}
+body.non-responsive .container {
+  width: 970px;
+  max-width: none !important;
+}
+body.non-responsive .col-xs-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,0.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,0.2);
+}
+body.non-responsive .container .navbar-header,
+body.non-responsive .container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+body.non-responsive .navbar-header {
+  float: left;
+}
+body.non-responsive .navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+  visibility: visible !important;
+}
+body.non-responsive .navbar-toggle {
+  display: none;
+}
+body.non-responsive .navbar-collapse {
+  border-top: 0;
+}
+body.non-responsive .navbar-brand {
+  margin-left: -15px;
+}
+body.non-responsive .navbar-nav {
+  float: left;
+  margin: 0;
+}
+body.non-responsive .navbar-nav > li {
+  float: left;
+}
+body.non-responsive .navbar-nav > li > a {
+  padding: 15px;
+}
+body.non-responsive .navbar-nav.navbar-right {
+  float: right;
+}
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}
+body.non-responsive .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a,
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+body.non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+body.non-responsive .navbar-form {
+  float: left;
+  width: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body.non-responsive .navbar-form .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+body.non-responsive .navbar-form .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+body.non-responsive .navbar-form .form-control-static {
+  display: inline-block;
+}
+body.non-responsive .navbar-form .input-group {
+  display: inline-table;
+  vertical-align: middle;
+}
+body.non-responsive .navbar-form .input-group .input-group-addon,
+body.non-responsive .navbar-form .input-group .input-group-btn,
+body.non-responsive .navbar-form .input-group .form-control {
+  width: auto;
+}
+body.non-responsive .navbar-form .input-group > .form-control {
+  width: 100%;
+}
+body.non-responsive .navbar-form .control-label {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+body.non-responsive .navbar-form .radio,
+body.non-responsive .navbar-form .checkbox {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+body.non-responsive .navbar-form .radio label,
+body.non-responsive .navbar-form .checkbox label {
+  padding-left: 0;
+}
+body.non-responsive .navbar-form .radio input[type="radio"],
+body.non-responsive .navbar-form .checkbox input[type="checkbox"] {
+  position: relative;
+  margin-left: 0;
+}
+body.non-responsive .navbar-form .has-feedback .form-control-feedback {
+  top: 0;
+}
+body.non-responsive .form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+body.non-responsive .form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+body.non-responsive .form-inline .form-control-static {
+  display: inline-block;
+}
+body.non-responsive .form-inline .input-group {
+  display: inline-table;
+  vertical-align: middle;
+}
+body.non-responsive .form-inline .input-group .input-group-addon,
+body.non-responsive .form-inline .input-group .input-group-btn,
+body.non-responsive .form-inline .input-group .form-control {
+  width: auto;
+}
+body.non-responsive .form-inline .input-group > .form-control {
+  width: 100%;
+}
+body.non-responsive .form-inline .control-label {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+body.non-responsive .form-inline .radio,
+body.non-responsive .form-inline .checkbox {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+body.non-responsive .form-inline .radio label,
+body.non-responsive .form-inline .checkbox label {
+  padding-left: 0;
+}
+body.non-responsive .form-inline .radio input[type="radio"],
+body.non-responsive .form-inline .checkbox input[type="checkbox"] {
+  position: relative;
+  margin-left: 0;
+}
+body.non-responsive .form-inline .has-feedback .form-control-feedback {
+  top: 0;
+}
+.roster {
+  margin-top: 20%;
+  max-height: 500px;
+  overflow: hidden;
+}
+.roster .panel-body {
+  padding: 2px;
+}
+field {
+  display: block;
+  width: 800px;
+  height: 800px;
+  position: relative;
+  background-image: url("assets/img/baseball-field-clipart-field.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  line-height: 25px;
+}
+field dugout {
+  position: absolute;
+  height: 115px;
+  width: 46px;
+  top: 523px;
+}
+field dugout.team-home {
+  background-color: #ff8080;
+  border: 2px solid #f00;
+  transform: rotate(-45deg);
+  left: 212px;
+}
+field dugout.team-away {
+  background-color: #8080ff;
+  border: 2px solid #00f;
+  transform: rotate(45deg);
+  left: 556px;
+}
+field on-deck-circle {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+field on-deck-circle.team-home {
+  background-color: #ff8080;
+  border: 2px solid #f00;
+  top: 653px;
+  left: 255px;
+}
+field on-deck-circle.team-away {
+  background-color: #8080ff;
+  border: 2px solid #00f;
+  top: 653px;
+  left: 470px;
+}
+field player {
+  height: 25px;
+  width: 25px;
+  transition: all 3s linear;
+  position: absolute;
+  -webkit-border-radius: 35%;
+  -moz-border-radius: 35%;
+  border-radius: 35%;
+}
+field player.team-home {
+  background-color: #f00;
+}
+field player.team-home.on-deck {
+  top: 653px;
+  left: 238px;
+}
+field player.team-home.pos-pine {
+  top: 574px;
+  left: 238px;
+}
+field player.team-away {
+  background-color: #00f;
+}
+field player.team-away.on-deck {
+  top: 653px;
+  left: 536px;
+}
+field player.team-away.pos-pine {
+  top: 574px;
+  left: 562px;
+}
+field player.pos-left {
+  top: 206px;
+  left: 144px;
+}
+field player.pos-center {
+  top: 95px;
+  left: 387px;
+}
+field player.pos-right {
+  top: 206px;
+  left: 622px;
+}
+field player.pos-second {
+  top: 320px;
+  left: 462px;
+}
+field player.pos-third {
+  top: 395px;
+  left: 250px;
+}
+field player.pos-pitcher {
+  top: 431px;
+  left: 387px;
+}
+field player.pos-first {
+  top: 395px;
+  left: 527px;
+}
+field player.pos-catcher {
+  top: 636px;
+  left: 387px;
+}
+field player.pos-short {
+  top: 318px;
+  left: 309px;
+}
+.at-first {
+  top: 447px;
+  left: 536px;
+}
+.at-second {
+  top: 299px;
+  left: 387px;
+}
+.at-third {
+  top: 447px;
+  left: 238px;
+}
+.at-home {
+  top: 599px;
+  left: 387px;
+}
+.box-left {
+  top: 599px;
+  left: 358px;
+}
+.box-right {
+  top: 599px;
+  left: 415px;
+}
+.load-bases {
+  position: absolute;
+  width: auto;
+  bottom: 70px;
+  left: 50%;
+  margin-left: -48px;
+}
+.inline-block {
+  display: inline-block;
+}

@@ -1,0 +1,109 @@
+fieldheight = 800px;
+fieldwidth = 800px;
+homecolor = red;
+awaycolor = blue;
+setPosition(top = 0, left = 0)
+  top: unit(top, px)
+  left: unit(left, px)
+
+border-radius(val)
+  -webkit-border-radius: val
+  -moz-border-radius: val
+  border-radius: val
+
+field
+  display:block;
+  width: fieldheight;
+  height: fieldwidth;
+  position: relative;
+  background-image: url('assets/img/baseball-field-clipart-field.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align:center;
+  color:white;
+  line-height:25px;
+  dugout
+    position:absolute;
+    height: 115px;
+    width: 46px;
+    top: 523px;
+    &.team-home
+      background-color: lighten(homecolor,50%);
+      border: 2px solid homecolor
+      transform: rotate(-45deg);
+      left: 212px;
+    &.team-away
+      background-color: lighten(awaycolor,50%);
+      border: 2px solid awaycolor
+      transform: rotate(45deg);
+      left: 556px;
+  on-deck-circle
+    width 75px;
+    height 75px;
+    position: absolute;
+    border-radius(50%);
+    &.team-home
+      background-color: lighten(homecolor,50%);
+      border: 2px solid homecolor
+      setPosition(653, 255)
+    &.team-away
+      background-color: lighten(awaycolor,50%);
+      border: 2px solid awaycolor
+      setPosition(653, 470)
+  player
+    height:25px;
+    width:25px;
+    transition:all 3s linear;
+    position: absolute;
+    &.team-home
+      background-color:homecolor;
+      &.on-deck
+        setPosition(653, 238)
+      &.pos-pine
+        setPosition(574,238)
+    &.team-away
+      background-color:awaycolor;
+      &.on-deck
+        setPosition(653, 536)
+      &.pos-pine
+        setPosition(574,562)
+    border-radius(35%)
+    &.pos-left
+      setPosition(206, 144)
+    &.pos-center
+      setPosition(95, 387)
+    &.pos-right
+      setPosition(206, 622)
+    &.pos-second
+      setPosition(320, 462)
+    &.pos-third
+      setPosition(395, 250)
+    &.pos-pitcher
+      setPosition(431, 387)
+    &.pos-first
+      setPosition(395, 527)
+    &.pos-catcher
+      setPosition(636, 387)
+    &.pos-short
+      setPosition(318, 309)
+//BASES NOW
+    &.at-first
+      setPosition(447, 536)
+    &.at-second
+      setPosition(299, 387)
+    &.at-third
+      setPosition(447, 238)
+    &.at-home
+      setPosition(599, 387)
+//HITTING
+    &.box-left
+      setPosition(599, 358)
+    &.box-right
+      setPosition(599, 415)
+
+.load-bases 
+  position: absolute;
+  width: auto;
+  bottom: 70px;
+  left: 50%;
+  margin-left: -48px;

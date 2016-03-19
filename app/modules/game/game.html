@@ -1,0 +1,8 @@
+<div class="row" style="position:relative" ng-controller="GameController as gc">
+   <button class="btn btn-primary" ng-click="gc.saveAll()">Save All</button>
+
+   <roster ng-if="gc.game.homeTeam" team="gc.game.homeTeam" is-home="true" class="col-md-2 roster roster-left"></roster>
+   <div class="col-md-8" ng-include="'/modules/field/field.html'"></div>
+   <roster ng-if="gc.game.awayTeam" team="gc.game.awayTeam" is-home="false" class="col-md-2 roster roster-right"></roster>
+   <button class="btn btn-primary load-bases" ng-click="gc.loadBases()">Load Bases</button>
+</div>

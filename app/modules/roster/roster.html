@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+   <div class="panel-heading">
+      {{rc.team.name}}
+   </div>
+   <div class="panel-body">
+      <div class="list-group">
+         <div ng-repeat="player in rc.team.players track by player.id">
+            <span class="inline-block" style="width:30px;">#{{player.number}}</span>
+            <select ng-model="player.position" ng-options="key as pos.name for (key,pos) in rc.getPositions()" ng-change="rc.updatePosition(player)"></select>
+         </div>
+      </div>
+   </div>
+</div>

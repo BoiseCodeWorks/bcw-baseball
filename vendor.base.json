@@ -1,0 +1,11 @@
+[
+  "node_modules/jquery/dist/jquery.js",
+  "node_modules/angular/angular.js",
+  "node_modules/angular-animate/angular-animate.js",
+  "node_modules/bootstrap/dist/js/bootstrap.js",
+  "node_modules/bootstrap/dist/css/bootstrap.css",
+  "vendor/firebase.js",
+  "node_modules/js-data/dist/js-data.min.js",
+  "node_modules/js-data-firebase/dist/js-data-firebase.js",
+  "node_modules/js-data-angular/dist/js-data-angular.js"
+]
