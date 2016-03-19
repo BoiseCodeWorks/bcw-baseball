@@ -22,7 +22,7 @@ var useStylus = true;
 var useCache = false;
 
 var src = "./src";
-var dest = "./app";
+var dest = "../baseball";
 
 var source = {
   js: [src + '/**/*.js'],
@@ -130,12 +130,13 @@ gulp.task('appfiles', [
 
 // Remove all files from the build paths
 gulp.task('clean', function(done) {
-  var delconfig = [].concat(
-    build.js,
-    build.css,
-    build.html,
-    build.assets
-  );
+  var delconfig = ['!.gitignore', '!.git', dest +'/**/*'];
+  // var delconfig = [].concat(
+  //   build.js,
+  //   build.css,
+  //   build.html,
+  //   build.assets
+  // );
 
   log('Cleaning: ' + util.colors.blue(delconfig));
   // force: clean files outside current directory
